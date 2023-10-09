@@ -1,0 +1,27 @@
+.searchbox-container {
+  width: 75%;
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-end;
+  justify-content: center;
+  .search-border {
+    border: 1px solid grey;
+    width: 100%;
+  }
+}
+
+.h-logo {
+  height: 55px;
+}
+
+.search-header-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 650px) {
+  .searchbox-container {
+    justify-content: flex-end;
+  }
+}

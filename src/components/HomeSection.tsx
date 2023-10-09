@@ -6,7 +6,9 @@ import SearchBox from "./SearchBox/SearchBox";
 const HomeLayout:React.FC = () => {
   return (
     <div className="w-full flexCenter">
-      <Container className="w-full"><SearchBox /></Container>
+      <Container className="w-full flexCenter">
+        <SearchBox />
+      </Container>
     </div>
   );
 }

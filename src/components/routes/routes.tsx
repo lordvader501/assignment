@@ -1,6 +1,6 @@
 import { createBrowserRouter} from 'react-router-dom';
 import App from '../../App';
-import HomeLayout from '../HomeSection';
+import SearchPage from '../searchpage/SearchPage';
 
 
 const routes = createBrowserRouter([
@@ -10,7 +10,7 @@ const routes = createBrowserRouter([
   },
   {
     path: '/search',
-    element: <HomeLayout />
+    element: <SearchPage />
   },
 ]);
 

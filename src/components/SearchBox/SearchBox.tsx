@@ -3,6 +3,7 @@ import "./SearchBox.styles.scss";
 import SearchIcon from "../logos/SearchIcon";
 import { faker } from '@faker-js/faker';
 import { Link, useNavigate } from "react-router-dom";
+import classNames from "classnames";
 
 
 interface ProductDetailsType {
@@ -45,7 +46,7 @@ const SearchResults: React.FC<{productDetails? :ProductDetailsType, setDisplayRe
 
 
 
-const SearchBox:React.FC = () => {
+const SearchBox:React.FC<{showResults?: boolean, className?: string}> = ({showResults=true, className}) => {
   const [searchItem, setSearchItem] = useState<string>('');
   const [displayResults, setDisplayResults] = useState<boolean>(false);
   const [productDetails, setProductDetails] = useState<ProductDetailsType>();
@@ -79,11 +80,11 @@ const SearchBox:React.FC = () => {
     if (event.key === 'Enter') navigate('/search')
   }
   return (
-    <div className="flexCenter">
+    <>
       <div className="flexCenter search-container">
         <input
           type="search"
-          className="search-input"
+          className={classNames("search-input", className)}
           placeholder="Search"
           value={searchItem}
           onChange={handleSearchChange}
@@ -91,10 +92,10 @@ const SearchBox:React.FC = () => {
           onBlur={handleBlur}
           onKeyDown={handleSearch}
         />
-        <SearchIcon className='search-logo' />
+        <Link to="/search" className='search-logo'><SearchIcon /></Link>
       </div>
-      {displayResults && (<SearchResults productDetails={productDetails} setDisplayResults={setDisplayResults} />)}
-    </div>
+      {showResults && displayResults && (<SearchResults productDetails={productDetails} setDisplayResults={setDisplayResults} />)}
+    </>
   );
 }
 

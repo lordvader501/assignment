@@ -1,0 +1,63 @@
+.filter-container {
+  max-width: 100%;
+  margin-top: -20px;
+  h1{
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    .filter-item {
+      .title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        text-transform: uppercase;
+      }
+      .options {
+        display: flex;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        input {
+          padding: 20px;
+          width: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .filter-container {
+    max-width: 285px;
+    h1 {
+      margin-bottom: 29px;
+    }
+    .filter {
+      flex-direction: column;
+      justify-content: flex-start !important;
+      gap: 0;
+      .filter-item {
+
+      }
+    }
+  }
+  
+}
+
+@media screen and (min-width: 430px) {
+  .filter {
+    justify-content: space-around !important;
+  }
+}

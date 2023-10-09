@@ -1,17 +1,31 @@
 import React from "react";
 
-const SearchIcon = ({ className }) => {
+const SearchIcon = ({ ...props }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      x="0px"
-      y="0px"
-      width="50"
-      height="50"
-      viewBox="0 0 30 30"
-      className={className}
+      width="32"
+      height="32"
+      viewBox="0 0 42 42"
+      fill="none"
+      {...props}
     >
-      <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+      <path
+        d="M20.5921 36.3226C29.2799 36.3226 36.3228 29.2797 36.3228 20.5918C36.3228 11.904 29.2799 4.86108 20.5921 4.86108C11.9042 4.86108 4.86133 11.904 4.86133 20.5918C4.86133 29.2797 11.9042 36.3226 20.5921 36.3226Z"
+        stroke="#200E32"
+        stroke-opacity="0.4"
+        stroke-width="2.625"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M31.5317 32.3484L37.6987 38.4996"
+        stroke="#200E32"
+        stroke-opacity="0.4"
+        stroke-width="2.625"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
   );
 };
