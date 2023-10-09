@@ -5,7 +5,7 @@ import Header from './components/header/Header';
 
 const App:React.FC = () => {
   return (
-    <div className='App'>
+    <div className='App' id='main'>
       <div className='mask'>
         <Header />
         <HomeSection />

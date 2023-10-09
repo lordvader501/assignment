@@ -5,15 +5,14 @@ $bg-transparant: rgba(200, 200, 200, 0.25);
   background-image: url("./assets/bgimg.jpg");
   background-position: center;
   background-size: cover;
+  min-height: 100vh;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 .mask {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
