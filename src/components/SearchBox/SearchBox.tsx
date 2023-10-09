@@ -64,6 +64,7 @@ const SearchBox:React.FC<{showResults?: boolean, className?: string}> = ({showRe
                 })),
       name: [0,1,2,3,4].map(() => faker.commerce.productName()),
     })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[searchItem]);
   const handleFocus = () => {
     const app = document.getElementById('main');
