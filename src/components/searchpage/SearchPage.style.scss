@@ -1,4 +1,27 @@
 .searchpage-container {
   display: flex;
   flex-direction: column;
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 25px;
+    border-radius: 4px;
+    margin-top: 50px;
+    justify-content: space-between;
+  }
+}
+
+.max-1440 {
+  max-width: 1440px !important;
+}
+@media screen and (min-width: 1024px) {
+  .searchpage-container {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 550px) {
+  .products {
+    justify-content: center !important;
+  }
 }

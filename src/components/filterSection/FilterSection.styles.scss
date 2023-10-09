@@ -41,6 +41,7 @@
 @media screen and (min-width: 1024px) {
   .filter-container {
     max-width: 285px;
+    min-width: 285px;
     h1 {
       margin-bottom: 29px;
     }
@@ -48,15 +49,12 @@
       flex-direction: column;
       justify-content: flex-start !important;
       gap: 0;
-      .filter-item {
-
-      }
     }
   }
   
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 470px) {
   .filter {
     justify-content: space-around !important;
   }
