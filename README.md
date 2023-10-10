@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# guide to project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### tech stack used 
+- Typescript(heavily used)
+- SASS (used mixins variables...)
+- classnames
+- react-router-dom
+- faker api
 
-## Available Scripts
+## live deployment on netlify
+[link - click here](https://zevi-lordvader501.netlify.app/)
 
-In the project directory, you can run:
+## steps to run project locally
 
-### `npm start`
+clone the repo `git clone https://github.com/lordvader501/assignment.git`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+install the dependencies `npm install`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+run the project `npm start`
 
-### `npm test`
+## project screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://github.com/lordvader501/assignment/assets/60027612/9e736d5d-33cc-4e98-9b22-fe115febb5ce)
+![image](https://github.com/lordvader501/assignment/assets/60027612/47b4c44c-7e75-4cc0-9b7b-a81009065917)
+![image](https://github.com/lordvader501/assignment/assets/60027612/b4728c0b-ea4a-452d-a7f3-07718f3d3ff7)
+![image](https://github.com/lordvader501/assignment/assets/60027612/be5d5aad-29cc-441b-9636-099be1d27501)
+![image](https://github.com/lordvader501/assignment/assets/60027612/6b94c32c-9c01-4d66-b02a-30d90bb1fcd5)
+![image](https://github.com/lordvader501/assignment/assets/60027612/ca792bfa-a65a-400a-897b-989394cae6f3)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
