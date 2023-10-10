@@ -38,7 +38,6 @@ const SearchPage = () => {
     else priceCompare = true
 
     const ratingFilter = product.rating >= ratings;
-    console.log(priceCompare)
     return priceCompare && ratingFilter;
   });
     setFilteredProductList(filteredProducts)
