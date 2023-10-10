@@ -15,6 +15,7 @@
     flex-wrap: wrap;
     gap: 30px;
     .filter-item {
+      width: 280px;
       .title {
         font-size: 20px;
         font-style: normal;
@@ -51,6 +52,9 @@
       gap: 0;
     }
   }
+  .border {
+    width: 90% !important;
+  }
   
 }
 
@@ -59,3 +63,33 @@
     justify-content: space-around !important;
   }
 }
+
+.show-menu {
+  visibility: visible;
+  display: block;
+}
+
+.menu-content {
+  visibility: collapse;
+  display: none;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.border {
+  border: 1px solid gray;
+  width: 250px;
+}
+.rotate {
+  transform: rotate(-90deg);
+}
+
+.arrow {
+  margin-right: 30px;
+}
+
